@@ -1,8 +1,12 @@
 package com.sda.weather;
 
+import com.sda.weather.userInterface.UserInterface;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hej");
-        System.out.println("Michal tu byl");
+
+        UserInterface userInterface = new UserInterface();
+        userInterface.run();
+
     }
 }
