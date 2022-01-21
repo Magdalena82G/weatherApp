@@ -1,6 +1,6 @@
 package com.sda.weather.entity;
 
-public class Location {
+public class Location { // todo remove this class, now we want to work on the user interface only
     String city;
     Float longitude;
     Float latitude;
