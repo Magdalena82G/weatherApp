@@ -1,8 +1,9 @@
-package com.sda.weather.userInterface;
+package com.sda.weather.userInterface; // todo rename to userinterface or forntend
 
 import java.util.Scanner;
 
 public class UserInterface {
+
     public void run() {
         System.out.println("Weather App is running");
         Scanner keyboard = new Scanner(System.in);
@@ -15,7 +16,7 @@ public class UserInterface {
 
             int decision = keyboard.nextInt();
 
-            switch(decision) {
+            switch (decision) {
                 case 1:
                     addLocalization();
                     break;
@@ -27,18 +28,19 @@ public class UserInterface {
                     break;
                 case 0:
                     return;
-
             }
-
         }
 
     }
-    private void addLocalization(){
+
+    private void addLocalization() {
 
     }
-    private void getAllLocalizations(){
+
+    private void getAllLocalizations() {
 
     }
+
     private void getWeatherInfo() {
 
     }
