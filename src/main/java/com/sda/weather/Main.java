@@ -1,6 +1,6 @@
 package com.sda.weather;
 
-import com.sda.weather.userInterface.UserInterface;
+import com.sda.weather.userinterface.UserInterface;
 
 public class Main {
     public static void main(String[] args) {

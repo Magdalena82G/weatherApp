@@ -7,6 +7,16 @@ public class Location {
     String province;
     String country;
 
+    public Location() {
+    }
+
+    public Location(String city, Float longitude, Float latitude, String country) {
+        this.city = city;
+        this.longitude = longitude;
+        this.latitude = latitude;
+        this.country = country;
+    }
+
     public String getCity() {
         return city;
     }
@@ -45,5 +55,15 @@ public class Location {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    @Override
+    public String toString() {
+        return "Location{" +
+                "city='" + city + '\'' +
+                ", longitude=" + longitude +
+                ", latitude=" + latitude +
+                ", country='" + country + '\'' +
+                '}';
     }
 }

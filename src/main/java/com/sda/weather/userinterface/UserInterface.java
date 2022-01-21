@@ -1,8 +1,15 @@
-package com.sda.weather.userInterface;
+package com.sda.weather.userinterface;
 
+import com.sda.weather.entity.Location;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class UserInterface {
+
+    public ArrayList<Location> locations = new ArrayList<>();
+
     public void run() {
         System.out.println("Weather App is running");
         Scanner keyboard = new Scanner(System.in);
@@ -35,11 +42,34 @@ public class UserInterface {
     }
     private void addLocalization(){
 
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Aby dodać nową lokalizację podaj: ");
+
+        System.out.println("miasto");
+        String city = keyboard.next();
+
+        System.out.println("kraj");
+        String country = keyboard.next();
+
+        System.out.println("szerokość geograficzna");
+        float latitude = keyboard.nextFloat();
+
+        System.out.println("wysokość geograficzna");
+        float longitude = keyboard.nextFloat();
+
+        locations.add(new Location(city, longitude, latitude,  country));
+
+
     }
     private void getAllLocalizations(){
 
+
+     //   for (int i = 0; i < locations.size(); i++) {
+            System.out.println(locations);
+      //  }
     }
     private void getWeatherInfo() {
+
 
     }
 }
